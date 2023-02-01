@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="./SASS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,17 +27,29 @@
         <img class="header__logo" src="images/logo/ohmyfood.png" alt="logo du site ohmyfood">
     </header>
     <main class="main">
+
+        <!-- LOCATION FORM -->
+
         <div class="location">
-            <form class="location__form"></form>
+            <form class="location__form" method="post">
+                <i class="location__form__logo fa-solid fa-location-dot"></i>
+                <input class="location__form__input" type="text" name="location" id="town"
+                    placeholder="Paris, Belleville">
+            </form>
 
         </div>
-        <div class="explore">
+
+        <!-- EXPLORE -->
+
+        <section class="explore">
             <h1 class="explore__heading">Réservez le menu qui vous convient</h1>
             <p class="explore__text">Découvrez des restaurants d'éxception,sélectionnés par nos soins.</p>
             <a class="explore__button">Explorer nos restaurants</a>
 
-        </div>
-        <div class="fonctionnement">
+        </section>
+        <!-- FUNCTIONING -->
+
+        <section class="fonctionnement">
             <h2 class="fontionnement__heading">Fonctionnement</h2>
             <div class="fonctionnement_container">
                 <div class="fonctionnement_container__button">
@@ -48,12 +62,13 @@
                     <i class="fa-sharp fa-solid fa-store"></i>
                 </div>
             </div>
-        </div>
-        <div class="restaurants">
+
+        </section>
+        <section class="restaurants">
             <h2 class="restaurants__heading">Restaurants</h2>
             <div class="restaurants__container">
                 <div class="restaurants__container__cards">
-                    
+
                 </div>
                 <div class="restaurants__container__cards">
 
@@ -65,7 +80,7 @@
 
                 </div>
             </div>
-        </div>
+        </section>
 
     </main>
     <footer class="footer">
@@ -74,7 +89,7 @@
         <a class="footer__link" href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir Partenaire</a>
         <a class="footer__link" href="">Mentions légales</a>
         <a class="footer__link" href="">Contact</a>
-        
+
 
     </footer>
 

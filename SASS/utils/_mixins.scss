@@ -1,6 +1,14 @@
 //MISE EN PAGE
-@mixin center {
+@mixin center-xy {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+@mixin center-x{
+    display: flex;
+    justify-content: center;
+}
+@mixin center-y{
+    display: flex;
     align-items: center;
 }

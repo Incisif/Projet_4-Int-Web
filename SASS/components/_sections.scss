@@ -1,0 +1,25 @@
+//EXPLORE
+.explore {
+    @include center-xy;
+    flex-direction: column;
+    
+
+    &__heading {
+        @include font($roboto,24px,700,$black);
+        text-align: center;
+        margin: 2.4rem 3.1rem 0 3.1rem;
+    }
+
+    &__text {
+        @include font($roboto,18px,300,$black);
+        text-align: center;
+        margin-top: 1rem;
+    }
+    &__button{
+        @include font($roboto,1rem,500,$black);
+        @include center-xy;
+        @include button-rounded;
+        height: 3.1rem;
+        width: 13.6rem;
+    }
+}

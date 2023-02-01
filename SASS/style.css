@@ -118,7 +118,69 @@ input {
   font-size: 16px;
   position: absolute;
   left: 23px;
+  display: none;
 }
 .header__logo {
   width: 162px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: #EAEAEA;
+  box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+.location__form__logo {
+  font-size: 1rem;
+}
+.location__form__input {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  border: none;
+  margin-left: 1rem;
+  background-color: transparent;
+}
+
+.explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.explore__heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin: 2.4rem 3.1rem 0 3.1rem;
+}
+.explore__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  margin-top: 1rem;
+}
+.explore__button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.1rem;
+  width: 13.6rem;
 }/*# sourceMappingURL=style.css.map */

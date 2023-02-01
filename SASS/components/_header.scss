@@ -1,5 +1,5 @@
 .header {
-    @include center;
+    @include center-xy;
     height: 63px;
     width: 100%;
 
@@ -7,8 +7,7 @@
         font-size: 16px;
         position: absolute;
         left: 23px;
-        
-
+        display: none;
     }
 
     &__logo {
