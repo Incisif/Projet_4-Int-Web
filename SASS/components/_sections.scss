@@ -2,24 +2,75 @@
 .explore {
     @include center-xy;
     flex-direction: column;
-    
+    background-color: $bck-clr-light-grey ;
+
 
     &__heading {
-        @include font($roboto,24px,700,$black);
+        @include font($roboto, 24px, 700, $black);
         text-align: center;
         margin: 2.4rem 3.1rem 0 3.1rem;
     }
 
     &__text {
-        @include font($roboto,18px,300,$black);
+        @include font($roboto, 18px, 300, $black);
         text-align: center;
         margin-top: 1rem;
     }
-    &__button{
-        @include font($roboto,1rem,500,$black);
+
+    &__button {
+        @include font($roboto, 1rem, 500, $black);
         @include center-xy;
         @include button-rounded;
         height: 3.1rem;
         width: 13.6rem;
+        margin: 1.6rem 0 3rem 0;
+    }
+}
+
+//FONCTIONNEMENT
+.fonctionnement {
+    height: 440px;
+
+    &__heading {
+        @include font($roboto, 24px, 700, $black);
+        margin: 3rem 0 0 1.25rem;
+    }
+
+    &__container {
+        @include center-xy;
+        flex-direction: column;
+
+        &__button {
+            display: flex;
+            align-items: center;
+            height: 4.1rem;
+            width: 90%;
+            background-color: $bck-clr-light-grey;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            margin-top: 1.5rem;
+            &__num{
+                @include font($roboto,0.8rem, 500,white);
+                @include center-xy;
+                background-color: $primary-color;
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                transform: translateX(-12px);
+            }
+
+            &__logo {
+                font-size: 1.1rem;
+                color: $icone-clr-dark-grey;
+                position: absolute;
+                margin-left: 2rem;
+            }
+
+            &__text {
+                @include font($roboto, 1rem, 500, $black);
+                margin-left: 4.5rem;
+            }
+        }
+
     }
 }
