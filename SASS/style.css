@@ -178,7 +178,7 @@ input {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 500;
-  color: black;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,7 +199,7 @@ input {
   font-size: 24px;
   font-weight: 700;
   color: black;
-  margin: 3rem 0 0 1.25rem;
+  margin: 3.1rem 0 0 1.25rem;
 }
 .fonctionnement__container {
   display: flex;
@@ -243,4 +243,50 @@ input {
   font-weight: 500;
   color: black;
   margin-left: 4.5rem;
+}
+
+.restaurants {
+  background-color: #F7F7F7;
+}
+.restaurants__heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+  padding: 3.1rem 0 0 1.25rem;
+  margin-bottom: 1.62rem;
+}
+.restaurants__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.restaurants__container__cards {
+  height: 15.6rem;
+  width: 90%;
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+}
+.restaurants__container__cards__image {
+  height: 70%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants__container__cards__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: black;
+  margin: 1rem 0 0 0.62rem;
+}
+.restaurants__container__cards__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.06rem;
+  font-weight: 300;
+  color: black;
+  margin: 0.3rem 0 0 0.62rem;
 }/*# sourceMappingURL=style.css.map */
