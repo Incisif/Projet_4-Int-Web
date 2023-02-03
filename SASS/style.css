@@ -257,11 +257,14 @@ input {
   height: 24px;
   transform: translateX(-12px);
 }
-.fonctionnement__container__button__logo {
+.fonctionnement__container__button__icone {
   font-size: 1.1rem;
   color: #6E6E6E;
   position: absolute;
   margin-left: 2rem;
+}
+.fonctionnement__container__button__icone-3 {
+  color: #9356DC;
 }
 .fonctionnement__container__button__text {
   font-family: "Roboto", sans-serif;
@@ -269,6 +272,9 @@ input {
   font-weight: 500;
   color: black;
   margin-left: 4.5rem;
+}
+.fonctionnement__container__button:nth-child(3) {
+  background-color: #F5EDFF;
 }
 
 .restaurants {
