@@ -32,8 +32,8 @@
     height: 440px;
 
     &__heading {
-        @include font($roboto, 24px, 700, $black);
-        margin: $heading-margin;
+        @include font($roboto, 1.5rem, 700, $black);
+        padding: $heading-margin;
     }
 
     &__container {
@@ -43,8 +43,8 @@
         &__button {
             display: flex;
             align-items: center;
-            height: 4.1rem;
-            width: 90%;
+            height: 4.5rem;
+            width: 86%;
             background-color: $bck-clr-light-grey;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
             border-radius: 20px;
@@ -90,6 +90,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        padding-bottom: 4rem;
 
         &__cards {
             height: 15.6rem;
