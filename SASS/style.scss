@@ -3,14 +3,11 @@
 @import 'utils/breakpoints';
 @import 'base/reset';
 @import 'base/typography';
-@import 'layout/navigation';
-@import 'layout/grid';
-@import 'layout/sidebar';
-@import 'components/header';
-@import 'components/footer';
+@import 'layout/header';
+@import 'layout/footer';
 @import 'components/forms';
-@import 'components/sections';
 @import 'components/buttons';
 @import 'pages/home';
+@import 'pages/restaurants';
 @import 'pages/contat';
 @import 'themes/theme';
