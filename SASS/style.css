@@ -179,6 +179,30 @@ body {
   background-color: transparent;
 }
 
+.icone-coeur {
+  fill: #1c87c9;
+}
+
+.restaurants__container__cards__etiquette {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+  background-color: #99E2D0;
+  width: 5rem;
+  height: 1.8rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
+.restaurants__container__cards__etiquette__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.87rem;
+  font-weight: 500;
+  color: #008766;
+}
+
 .explore {
   display: flex;
   justify-content: center;
@@ -264,6 +288,9 @@ body {
   margin-left: 2rem;
 }
 .fonctionnement__container__button__icone-3 {
+  font-size: 1.1rem;
+  position: absolute;
+  margin-left: 2rem;
   color: #9356DC;
 }
 .fonctionnement__container__button__text {
@@ -271,7 +298,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
   color: black;
-  margin-left: 4.5rem;
+  margin-left: 3rem;
 }
 .fonctionnement__container__button:nth-child(3) {
   background-color: #F5EDFF;
@@ -296,11 +323,12 @@ body {
 }
 .restaurants__container__cards {
   height: 15.6rem;
-  width: 90%;
+  width: 21rem;
   background-color: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   margin-bottom: 1.5rem;
+  position: relative;
 }
 .restaurants__container__cards__image {
   height: 70%;

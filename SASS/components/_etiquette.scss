@@ -1,0 +1,14 @@
+.restaurants__container__cards__etiquette {
+    @include center-xy;
+    position: absolute;
+    right: 0.8rem;
+    top: 0.8rem;
+    background-color:$bck-etiquette-clr;
+    width:5rem ;
+    height:1.8rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    &__text{
+        @include font($roboto,0.87rem,500,$etiquette-font-clr);
+    }
+}

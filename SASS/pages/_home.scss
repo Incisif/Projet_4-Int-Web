@@ -29,17 +29,17 @@
 
 //FUNCTIONING
 .fonctionnement {
-    
+
 
     &__heading {
         @include font($roboto, 1.5rem, 700, $black);
         padding: $heading-margin;
     }
-    
+
     &__container {
         @include center-xy;
         flex-wrap: wrap;
-        margin-bottom:5rem;
+        margin-bottom: 5rem;
 
         &__button {
             display: flex;
@@ -66,37 +66,33 @@
                 color: $icone-clr-dark-grey;
                 position: absolute;
                 margin-left: 2rem;
-                &-3{
+
+                &-3 {
+                    font-size: 1.1rem;
+                    position: absolute;
+                    margin-left: 2rem;
                     color: $primary-color;
+
                 }
             }
-           
-           
+
+
 
             &__text {
                 @include font($roboto, 1rem, 500, $black);
-                margin-left: 4.5rem;
+                margin-left: 3rem;
             }
         }
-        &__button:nth-child(3){
+
+        &__button:nth-child(3) {
             background-color: $bck-clr-functionning-button-3;
-            
+
         }
 
 
     }
 }
-// @keyframes fillHeart {
-//     from {
-//         height: 0px;
-//         background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-//     }
 
-//     to {
-//         height:19px;
-//         background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-//     }
-// }
 //RESTAURRANTS
 .restaurants {
     background-color: $bck-clr-light-grey;
@@ -115,12 +111,13 @@
 
         &__cards {
             height: 15.6rem;
-            width: 90%;
+            width: 21rem;
             background-color: $white;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
             margin-bottom: 1.5rem;
-            
+            position: relative;
+
 
             &__image {
                 height: 70%;
@@ -138,45 +135,9 @@
                 @include font($roboto, 1.06rem, 300, $black);
                 margin: 0.3rem 0 0 0.62rem;
             }
-            // &__heart { 
-            //     position: relative; 
-            //     width: 21px; 
-            //     height: 19px;
-                
-                
-            // } 
-            
-            // &__heart:before,:after { 
-            //     position: absolute; 
-            //     content: ""; 
-            //     left: 10.5px; 
-            //     top: 0; 
-            //     width: 10.5px; 
-            //     height: 19px; 
-            //     background: transparent; 
-            //     border-radius: 10.5px 10.5px 0 0; 
-            //     transform: rotate(-45deg); 
-            //     transform-origin: 0 100%;
-            //     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-            //     overflow: hidden;
-                
-                 
-            // } 
-            
-            // &__heart:after { 
-            //     left: 0; 
-            //     transform: rotate(45deg); 
-            //     transform-origin :100% 100%; 
-            // }
-            // &__heart:hover {
-            //     animation: fillHeart 0.5s ease-out forwards;
-            //     overflow: hidden;
-            //   }
-            
+
         }
 
 
     }
 }
-
-
