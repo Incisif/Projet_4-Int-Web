@@ -76,7 +76,7 @@ main {
 
 body {
     line-height: 1;
-    
+
 }
 
 ol,
@@ -105,6 +105,10 @@ table {
 input {
     border-radius: 0;
 }
-body{
+
+.main {
     min-width: 375px;
+    @include center-x;
+    flex-direction: column;
+    width: 100%;
 }

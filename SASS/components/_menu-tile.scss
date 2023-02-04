@@ -1,0 +1,19 @@
+.menu__container__tile {
+    background-color: white;
+    height: 4.25rem;
+    border-radius: 1rem;
+    margin: 0.75rem auto 0 auto;
+    width: 100;
+    min-width: 21.8rem;
+
+    &__heading {
+        @include font($roboto, 1.125rem, 500, $black);
+        padding:$menu-tile-text-padding;
+        text-overflow: ellipsis;
+    }
+    &__sub-heading{
+        @include font($roboto,0.9rem,300,$black);
+        padding:$menu-tile-text-padding;
+        text-overflow: ellipsis;
+    }
+}
