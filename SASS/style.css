@@ -182,6 +182,9 @@ input {
   margin-left: 1rem;
   background-color: transparent;
 }
+.location__form__input:focus {
+  outline: none;
+}
 
 .principal-button {
   font-family: "Roboto", sans-serif;
@@ -194,13 +197,31 @@ input {
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
-  color: white;
   height: 3.1rem;
   width: 13.6rem;
 }
 
-.icone-coeur {
-  fill: #1c87c9;
+.heart-container__border {
+  position: absolute;
+  font-size: 1.3rem;
+  right: 1.5rem;
+  bottom: 2rem;
+  color: black;
+}
+.heart-container__filling {
+  position: absolute;
+  font-size: 1.3rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  opacity: 0;
+  transition: all 250ms ease;
+  right: 1.5rem;
+  bottom: 2rem;
+}
+.heart-container__filling:hover {
+  opacity: 1;
 }
 
 .restaurants__container__cards__etiquette {
