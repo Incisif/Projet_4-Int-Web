@@ -197,7 +197,6 @@ input {
   color: white;
   height: 3.1rem;
   width: 13.6rem;
-  margin: 1.6rem 0 3rem 0;
 }
 
 .icone-coeur {
@@ -238,13 +237,14 @@ input {
   margin: 0.75rem auto 0 auto;
   width: 100;
   min-width: 21.8rem;
+  position: relative;
 }
 .menu__container__tile__heading {
   font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
   font-weight: 500;
   color: black;
-  padding: 0.75rem 0 0 0.65rem;
+  padding: 0.7rem 0 0 0.65rem;
   text-overflow: ellipsis;
 }
 .menu__container__tile__sub-heading {
@@ -252,8 +252,17 @@ input {
   font-size: 0.9rem;
   font-weight: 300;
   color: black;
-  padding: 0.75rem 0 0 0.65rem;
+  padding: 0.7rem 0 0 0.65rem;
   text-overflow: ellipsis;
+}
+.menu__container__tile__price {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.93rem;
+  font-weight: 700;
+  color: black;
+  position: absolute;
+  right: 1rem;
+  bottom: 0.75rem;
 }
 
 .explore {
@@ -278,6 +287,9 @@ input {
   color: black;
   text-align: center;
   margin-top: 1rem;
+}
+.explore__button {
+  margin: 1.68rem 0 3.56rem 0;
 }
 
 .fonctionnement__heading {
@@ -391,19 +403,21 @@ input {
 
 .photo {
   width: 100%;
-  max-height: 300px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -1;
 }
 
 .menu {
   width: 100%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto -50px auto;
   border-radius: 30px 30px 0 0;
   z-index: 1;
-  transform: translateY(-50px);
   background-color: #F7F7F7;
   max-width: 1055px;
+  top: -50px;
+  position: relative;
 }
 .menu__container {
   width: 100%;
@@ -422,4 +436,11 @@ input {
   font-weight: 300;
   color: black;
   margin-top: 2.6rem;
+}
+.menu__order-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
 }/*# sourceMappingURL=style.css.map */
