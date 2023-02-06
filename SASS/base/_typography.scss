@@ -1,0 +1,8 @@
+$roboto:'Roboto', sans-serif;
+$shrikhand:'Shrikhand', cursive;
+@mixin font($font-family,$font-size, $font-weight,$color){
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight:$font-weight ;
+    color: $color;
+}

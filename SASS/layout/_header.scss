@@ -1,0 +1,16 @@
+.header {
+    @include center-xy;
+    height: 63px;
+    width: 100%;
+
+    &__backtrack {
+        font-size: 16px;
+        position: absolute;
+        left: 23px;
+        
+    }
+
+    &__logo {
+        width: 162px;
+    }
+}

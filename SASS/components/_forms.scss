@@ -1,0 +1,28 @@
+.location {
+    @include center-xy;
+    
+    &__form {
+        @include center-xy;
+        height: 50px;
+        width: 100%;
+        background-color: $bck-clr-grey;
+        box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.5); 
+        
+        
+
+        &__logo{
+            font-size:1rem; 
+        }
+        &__input {
+            @include font($roboto,1rem,500,black);
+            border: none;
+            margin-left: 1rem;
+            background-color:transparent;
+            
+        }
+        &__input:focus{
+            outline: none;
+        }
+
+    }
+}

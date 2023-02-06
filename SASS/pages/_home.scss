@@ -1,0 +1,138 @@
+//EXPLORE
+.explore {
+    @include center-xy;
+    flex-direction: column;
+    background-color: $bck-clr-light-grey ;
+
+
+    &__heading {
+        @include font($roboto, 24px, 700, $black);
+        text-align: center;
+        margin: 2.4rem 3.1rem 0 3.1rem;
+    }
+
+    &__text {
+        @include font($roboto, 18px, 300, $black);
+        text-align: center;
+        margin-top: 1rem;
+    }
+    &__button{
+        margin:1.68rem 0 3.56rem 0;
+    }
+    
+}
+
+//FUNCTIONING
+.fonctionnement {
+
+
+    &__heading {
+        @include font($roboto, 1.5rem, 700, $black);
+        padding: $heading-margin;
+    }
+
+    &__container {
+        @include center-xy;
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+
+        &__button {
+            display: flex;
+            align-items: center;
+            height: 4.5rem;
+            width: 20rem;
+            background-color: $bck-clr-light-grey;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            margin: 1.5rem 1.12rem;
+
+            &__num {
+                @include font($roboto, 0.8rem, 500, white);
+                @include center-xy;
+                background-color: $primary-color;
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                transform: translateX(-12px);
+            }
+
+            &__icone {
+                font-size: 1.1rem;
+                color: $icone-clr-dark-grey;
+                position: absolute;
+                margin-left: 2rem;
+
+                &-3 {
+                    font-size: 1.1rem;
+                    position: absolute;
+                    margin-left: 2rem;
+                    color: $primary-color;
+
+                }
+            }
+
+
+
+            &__text {
+                @include font($roboto, 1rem, 500, $black);
+                margin-left: 3rem;
+            }
+        }
+
+        &__button:nth-child(3) {
+            background-color: $bck-clr-functionning-button-3;
+
+        }
+
+
+    }
+}
+
+//RESTAURRANTS
+.restaurants {
+    background-color: $bck-clr-light-grey;
+
+    &__heading {
+        @include font($roboto, 1.5rem, 700, $black);
+        padding: $heading-margin;
+        margin-bottom: 1.62rem;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 4rem;
+
+        &__cards {
+            height: 15.6rem;
+            width: 21rem;
+            background-color: $white;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            position: relative;
+
+
+            &__image {
+                height: 70%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 15px 15px 0 0;
+            }
+
+            &__title {
+                @include font($roboto, 1.12rem, 700, $black);
+                margin: 1rem 0 0 0.62rem;
+            }
+
+            &__text {
+                @include font($roboto, 1.06rem, 300, $black);
+                margin: 0.3rem 0 0 0.62rem;
+            }
+
+        }
+
+
+    }
+}

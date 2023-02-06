@@ -1,0 +1,27 @@
+//FOOTER
+.footer {
+    background-color: $footer-bck-clr;
+    &__logo {
+        filter: invert(100%);
+        width: 137px;
+        margin: 1.37rem 0 1rem 1.56rem;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom:2rem ;
+
+        
+
+        &__link {
+            @include font($roboto, 1rem, 500, $white);
+            text-decoration: none;
+            margin: 0 0 0.6rem 1.56rem;
+
+            &__logo {
+                margin-right: 0.8rem;
+            }
+        }
+    }
+
+}
