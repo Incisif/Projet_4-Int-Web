@@ -3,24 +3,72 @@
     height: 4.25rem;
     border-radius: 1rem;
     margin: 0.75rem auto 0 auto;
-    width: 100;
+    width: 100%;
     min-width: 21.8rem;
-    position:relative;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 
     &__heading {
         @include font($roboto, 1.125rem, 500, $black);
-        padding:$menu-tile-text-padding;
+        padding: $menu-tile-text-padding;
         text-overflow: ellipsis;
     }
-    &__sub-heading{
-        @include font($roboto,0.9rem,300,$black);
-        padding:$menu-tile-text-padding;
+
+    &__sub-heading {
+        @include font($roboto, 0.9rem, 300, $black);
+        padding: $menu-tile-text-padding;
         text-overflow: ellipsis;
     }
-    &__price{
-        @include font($roboto,0.93rem,700,$black);
+
+    &__price {
+        @include font($roboto, 0.93rem, 700, $black);
         position: absolute;
         right: 1rem;
         bottom: 0.75rem;
+        transition: all 300ms ease;
+
+
+    }
+
+    &::after {
+        content: "";
+        width: 3.7rem;
+        height: 100%;
+        background: $tertiary-color;
+        transition: all 300ms ease;
+        position: absolute;
+        right: -3.7rem;
+        top: 0;
+    }
+
+    &::before {
+        content: "\f058";
+        font-family: 'Font Awesome 5 Free', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 1.25rem;
+        width: 3.7rem;
+        height: 100%;
+        position: absolute;
+        transition: transform 300ms ease ;
+        @include center-xy;
+        right:-3.7rem;
+        z-index: 1;
+        color: $white;
+        transform:rotate(-360deg);
+        
+    }
+
+    &:hover {
+
+        &::after,
+        .menu__container__tile__price {
+            transform: translateX(-3.7rem);
+        }
+        &::before{
+            transform: translateX(-3.7rem);
+        }
+
+
     }
 }
