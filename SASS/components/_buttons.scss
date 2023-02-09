@@ -5,5 +5,30 @@
     @include button-rounded;
     height: 3.1rem;
     width: 13.6rem;
-     
+    position: relative;
+    z-index: 2;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include font($roboto, 1rem, 500, $white);
+        @include center-xy;
+        @include button-rounded;
+        height: 3.1rem;
+        width: 13.6rem;
+        opacity: 0;
+        background:linear-gradient(200.64deg, lighten(#9356DC, 4%) -5.2%, lighten(#FF79DA, 4%) 110.74%);
+        transition: opacity 250ms;
+        z-index: -1;
+        
+    }
+    &:hover{
+        &::after{
+            opacity: 1;
+           
+        }
+    }
+
 }
