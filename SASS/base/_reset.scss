@@ -107,7 +107,7 @@ input {
 }
 
 .main {
-    min-width: 375px;
+   
     @include center-x;
     flex-direction: column;
     width: 100%;

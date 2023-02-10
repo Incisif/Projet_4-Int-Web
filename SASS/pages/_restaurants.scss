@@ -29,7 +29,7 @@
         padding: 0 0.8rem 0 0.8rem;
         max-width: 634px;
 
-
+        
 
     }
 
@@ -38,16 +38,17 @@
         display: flex;
         @include font($shrikhand, 1.75rem, 400, $black);
         margin-top: 2rem;
-        vertical-align: middle;
+        
     }
 
     &__title {
         @include font($roboto, 1rem, 300, $black);
         margin-top: $menu-title-margin;
+        
     }
 
     &__order-button {
-        width: 100%;
+        
         @include center-xy;
         margin: 3rem 0 3rem 0;
     }

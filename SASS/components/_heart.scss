@@ -1,10 +1,12 @@
 .heart-container {
-   display: inline-block;
+   @include center-xy;
+   margin-left: 2rem;
+   margin-right: 2rem;
     &__border {
         position: absolute;
         font-size: 1.3rem;
         color: $black;
-        margin-left: 2rem;
+        
     }
 
     &__filling {
@@ -15,7 +17,8 @@
         background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
         opacity: 0;
         transition: all 250ms ease;
-        margin-left: 2rem;
+        
+        
 
 
 
