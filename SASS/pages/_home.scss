@@ -16,10 +16,11 @@
         text-align: center;
         margin-top: 1rem;
     }
-    &__button{
-        margin:1.68rem 0 3.56rem 0;
+
+    &__button {
+        margin: 1.68rem 0 3.56rem 0;
     }
-    
+
 }
 
 //FUNCTIONING
@@ -34,7 +35,7 @@
     &__container {
         @include center-xy;
         flex-wrap: wrap;
-        margin-bottom: 5rem;
+        
 
         &__button {
             display: flex;
@@ -94,6 +95,8 @@
 
     &__heading {
         @include font($roboto, 1.5rem, 700, $black);
+        display: flex;
+        align-items: center;
         padding: $heading-margin;
         margin-bottom: 1.62rem;
     }
@@ -110,8 +113,8 @@
             background-color: $white;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
-            margin-bottom: 1.5rem;
             position: relative;
+            margin: 1rem 0.5rem 0 0.5rem;
 
 
             &__image {
@@ -124,6 +127,7 @@
             &__title {
                 @include font($roboto, 1.12rem, 700, $black);
                 margin: 1rem 0 0 0.62rem;
+
             }
 
             &__text {
@@ -135,4 +139,11 @@
 
 
     }
+}
+
+.heading-heart {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2.5rem;
+    
 }
