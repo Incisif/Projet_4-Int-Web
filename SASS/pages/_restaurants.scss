@@ -51,6 +51,8 @@
         
         @include center-xy;
         margin: 3rem 0 3rem 0;
+        background: $principal-button-gradient;
+        border-radius: 25px;
     }
 
 }

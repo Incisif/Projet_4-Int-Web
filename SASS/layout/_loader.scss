@@ -1,0 +1,86 @@
+$colors: (
+    $tertiary-color,
+    $secondary-color,
+    $primary-color,
+    $icone-clr-dark-grey
+);
+$delay-step: 325ms;
+$duration: 1500ms;
+
+@function set-background-color($index) {
+    $color: nth($colors, $index);
+    @return $color;
+}
+
+@function set-animation-delay($index) {
+    $delay: $delay-step * $index ;
+    @return $delay;
+}
+
+.loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    background-color: $white;
+    animation: display-loader 3s forwards;
+    
+
+    &__container {
+        display: flex;
+
+
+        &__circle {
+
+            @for $i from 1 through length($colors) {
+                &:nth-child(#{$i}) {
+                    background-color: set-background-color($i);
+                    width: 50px;
+                    height: 50px;
+                    margin: 1%;
+                    border-radius: 50%;
+                    animation: moveUpAndDown $duration set-animation-delay($i) ease-in-out infinite;
+
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+@keyframes moveUpAndDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+}
+
+
+
+@keyframes display-loader {
+    99% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
