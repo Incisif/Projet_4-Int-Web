@@ -32,6 +32,7 @@ body,html {
 	line-height: 1;
     height: 100%;
     position: relative;
+	min-width: 375px;
 }
 ol, ul {
 	list-style: none;
@@ -58,4 +59,5 @@ input {
     @include center-x;
     flex-direction: column;
     width: 100%;
+	
 }
