@@ -14,6 +14,7 @@ $black:black;
 $white:white;
 $bck-clr-functionning-button-3:#F5EDFF;
 $principal-button-gradient:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+$principal-button-gradient-lighten:linear-gradient(200.64deg, lighten(#9356DC, 4%) -5.2%, lighten(#FF79DA, 4%) 110.74%);
 
 //MARGIN/PADDING 
 $heading-margin:3.1rem 0 0 1.25rem;

@@ -1,99 +1,51 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-html,
-body,
-div,
-span,
-object,
-iframe,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-code,
-em,
-img,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-b,
-u,
-i,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-main,
-canvas,
-embed,
-footer,
-header,
-nav,
-section,
-video {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
-     -moz-text-size-adjust: none;
-          text-size-adjust: none;
   text-decoration: none;
 }
 
-footer,
-header,
-nav,
-section,
-main {
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-body {
+body, html {
   line-height: 1;
+  height: 100%;
+  position: relative;
+  min-width: 375px;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: "";
   content: none;
 }
@@ -108,7 +60,6 @@ input {
 }
 
 .main {
-  min-width: 375px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -215,13 +166,12 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: linear-gradient(200.64deg, #9e67e0 -5.2%, #ff8de0 110.74%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   height: 3.1rem;
   width: 13.6rem;
   opacity: 0;
-  background: linear-gradient(200.64deg, #9e67e0 -5.2%, #ff8de0 110.74%);
   transition: opacity 250ms;
   z-index: -1;
 }
@@ -230,13 +180,16 @@ input {
 }
 
 .heart-container {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 .heart-container__border {
   position: absolute;
   font-size: 1.3rem;
   color: black;
-  margin-left: 2rem;
 }
 .heart-container__filling {
   position: absolute;
@@ -247,7 +200,6 @@ input {
   background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   opacity: 0;
   transition: all 250ms ease;
-  margin-left: 2rem;
 }
 .heart-container__filling:hover {
   opacity: 1;
@@ -280,6 +232,17 @@ input {
   margin-top: 0.75rem;
 }
 
+@keyframes moveCheck {
+  100% {
+    transform: translateX(-3.7rem);
+  }
+}
+@keyframes tiles-animation {
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
 .menu__container__tile {
   background-color: white;
   height: 4.25rem;
@@ -289,6 +252,51 @@ input {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4.25rem);
+  opacity: 0;
+}
+.menu__container__tile:nth-of-type(1) {
+  animation: tiles-animation 400ms ease-in-out 0ms forwards;
+}
+.menu__container__tile:nth-of-type(2) {
+  animation: tiles-animation 400ms ease-in-out 65ms forwards;
+}
+.menu__container__tile:nth-of-type(3) {
+  animation: tiles-animation 400ms ease-in-out 130ms forwards;
+}
+.menu__container__tile:nth-of-type(4) {
+  animation: tiles-animation 400ms ease-in-out 195ms forwards;
+}
+.menu__container__tile:nth-of-type(5) {
+  animation: tiles-animation 400ms ease-in-out 260ms forwards;
+}
+.menu__container__tile:nth-of-type(6) {
+  animation: tiles-animation 400ms ease-in-out 325ms forwards;
+}
+.menu__container__tile:nth-of-type(7) {
+  animation: tiles-animation 400ms ease-in-out 390ms forwards;
+}
+.menu__container__tile:nth-of-type(8) {
+  animation: tiles-animation 400ms ease-in-out 455ms forwards;
+}
+.menu__container__tile:nth-of-type(9) {
+  animation: tiles-animation 400ms ease-in-out 520ms forwards;
+}
+.menu__container__tile:nth-of-type(10) {
+  animation: tiles-animation 400ms ease-in-out 585ms forwards;
+}
+.menu__container__tile:nth-of-type(11) {
+  animation: tiles-animation 400ms ease-in-out 650ms forwards;
+}
+.menu__container__tile:nth-of-type(12) {
+  animation: tiles-animation 400ms ease-in-out 715ms forwards;
+}
+.menu__container__tile:nth-of-type(13) {
+  animation: tiles-animation 400ms ease-in-out 780ms forwards;
+}
+.menu__container__tile:nth-of-type(14) {
+  animation: tiles-animation 400ms ease-in-out 845ms forwards;
 }
 .menu__container__tile__heading {
   font-family: "Roboto", sans-serif;
@@ -354,11 +362,6 @@ input {
   text-overflow: ellipsis;
 }
 
-@keyframes moveCheck {
-  100% {
-    transform: translateX(-3.7rem);
-  }
-}
 .explore {
   display: flex;
   justify-content: center;
@@ -398,6 +401,7 @@ input {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 3.75em;
 }
 .fonctionnement__container__button {
   display: flex;
@@ -448,22 +452,21 @@ input {
 
 .restaurants {
   background-color: #F7F7F7;
-}
-.restaurants__heading {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: black;
-  display: flex;
-  align-items: center;
-  padding: 3.1rem 0 0 1.25rem;
-  margin-bottom: 1.62rem;
+  width: auto;
 }
 .restaurants__container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 4rem;
+}
+.restaurants__container__heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+  padding: 3.1rem 0 0 1.25rem;
+  margin-bottom: 1.62rem;
 }
 .restaurants__container__cards {
   height: 15.6rem;
@@ -487,6 +490,9 @@ input {
   font-weight: 700;
   color: black;
   margin: 1rem 0 0 0.62rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .restaurants__container__cards__text {
   font-family: "Roboto", sans-serif;
@@ -494,12 +500,6 @@ input {
   font-weight: 300;
   color: black;
   margin: 0.3rem 0 0 0.62rem;
-}
-
-.heading-heart {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 2.5rem;
 }
 
 .photo {
@@ -511,22 +511,24 @@ input {
 }
 
 .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
-  margin: 0 auto -50px auto;
+  align-self: center;
+  margin-bottom: -50px;
   border-radius: 30px 30px 0 0;
   z-index: 1;
   background-color: #F7F7F7;
   max-width: 1055px;
   top: -50px;
   position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 .menu__container {
   width: 100%;
-  padding: 0 0.8rem 0 0.8rem;
   max-width: 634px;
+  margin: 0 0.8rem 0 0.8rem;
 }
 .menu__heading {
   display: flex;
@@ -535,7 +537,6 @@ input {
   font-weight: 400;
   color: black;
   margin-top: 2rem;
-  vertical-align: middle;
 }
 .menu__title {
   font-family: "Roboto", sans-serif;
@@ -545,9 +546,86 @@ input {
   margin-top: 2.6rem;
 }
 .menu__order-button {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 3rem 0 3rem 0;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  border-radius: 25px;
+}
+
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: absolute;
+  background-color: white;
+  animation: display-loader 3s forwards;
+}
+.loader-wrapper__container {
+  display: flex;
+}
+.loader-wrapper__container__circle:nth-child(1) {
+  background-color: #99E2D0;
+  width: 30px;
+  height: 30px;
+  margin: 1%;
+  border-radius: 50%;
+  animation: moveUpAndDown 1500ms 325ms ease-in-out infinite;
+}
+.loader-wrapper__container__circle:nth-child(2) {
+  background-color: #FF79DA;
+  width: 30px;
+  height: 30px;
+  margin: 1%;
+  border-radius: 50%;
+  animation: moveUpAndDown 1500ms 650ms ease-in-out infinite;
+}
+.loader-wrapper__container__circle:nth-child(3) {
+  background-color: #9356DC;
+  width: 30px;
+  height: 30px;
+  margin: 1%;
+  border-radius: 50%;
+  animation: moveUpAndDown 1500ms 975ms ease-in-out infinite;
+}
+.loader-wrapper__container__circle:nth-child(4) {
+  background-color: #6E6E6E;
+  width: 30px;
+  height: 30px;
+  margin: 1%;
+  border-radius: 50%;
+  animation: moveUpAndDown 1500ms 1300ms ease-in-out infinite;
+}
+.loader-wrapper__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: black;
+  margin-right: 1rem;
+}
+
+@keyframes moveUpAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+@keyframes display-loader {
+  99% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
 }/*# sourceMappingURL=style.css.map */
