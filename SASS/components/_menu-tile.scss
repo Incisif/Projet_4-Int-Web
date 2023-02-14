@@ -17,7 +17,7 @@ $tile-animation-delay: 100ms;
         
     }
 }
-
+$delay:65ms;
 .menu__container__tile {
     background-color: white;
     height: 4.25rem;
@@ -31,9 +31,9 @@ $tile-animation-delay: 100ms;
     transform: translateY(-4.25rem);
     opacity: 0;
 
-    @for $i from 1 through 12{
+    @for $i from 1 through 14{
         &:nth-of-type(#{$i}) {
-            animation: tiles-animation 400ms   ease-in-out forwards;
+            animation: tiles-animation 400ms ease-in-out ($i - 1) * $delay forwards;
         }
     }
     &__heading {
