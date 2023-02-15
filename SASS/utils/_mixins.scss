@@ -26,3 +26,14 @@
     border-radius: 25px;
     
 }
+//MEDIA QUERY
+@mixin tablet{
+    @media screen and (min-width:$tablet){
+        @content;
+    }
+}
+@mixin desktop{
+    @media screen and (min-width:$desktop){
+        @content;
+    }
+}

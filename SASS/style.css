@@ -86,15 +86,34 @@ input {
 .footer {
   background-color: #353535;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 .footer__logo {
   filter: invert(100%);
   width: 137px;
   margin: 1.37rem 0 1rem 1.56rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    margin: 2.9rem 2.5rem 2.9rem 0;
+  }
+}
 .footer__container {
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: ROW;
+    padding: 0;
+    align-items: center;
+    margin-left: 2.5rem;
+  }
 }
 .footer__container__link {
   font-family: "Roboto", sans-serif;
@@ -103,6 +122,12 @@ input {
   color: white;
   text-decoration: none;
   margin: 0 0 0.6rem 1.56rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__container__link {
+    padding: 0;
+    margin: 0 2.5rem 0 0;
+  }
 }
 .footer__container__link__logo {
   margin-right: 0.8rem;
