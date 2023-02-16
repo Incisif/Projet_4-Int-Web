@@ -14,7 +14,7 @@
     &__text {
         @include font($roboto, 18px, 300, $black);
         text-align: center;
-        margin-top: 1rem;
+        margin: 1rem 2rem 0 2rem;
     }
 
     &__button {

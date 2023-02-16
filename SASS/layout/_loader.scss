@@ -47,10 +47,7 @@ $duration: 1500ms;
             }
         }
     }
-    &__text{
-        @include font ($roboto,2.5rem,400,$black);
-        margin-right: 1rem;
-    }
+    
 
 }
 
