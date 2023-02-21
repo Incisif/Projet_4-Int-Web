@@ -9,7 +9,7 @@
         @include font($roboto, 24px, 700, $black);
         text-align: center;
         margin: 2.4rem 3.1rem 0 3.1rem;
-        
+
     }
 
     &__text {
@@ -31,14 +31,26 @@
     &__heading {
         @include font($roboto, 1.5rem, 700, $black);
         padding: $heading-margin;
-        
+
+        @include desktop {
+            padding-left: 6.5rem;
+        }
+
     }
 
     &__container {
         @include center-xy;
         flex-wrap: wrap;
         margin-bottom: 3.75em;
-        
+
+
+        @include desktop {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            padding-left: 6.5rem;
+
+        }
+
 
         &__button {
             display: flex;
@@ -95,21 +107,37 @@
 //RESTAURRANTS
 .restaurants {
     background-color: $bck-clr-light-grey;
-    width: auto;
-    
+    width: 100%;
+    overflow-y: auto;
 
-   
+
+
+
 
     &__container {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         padding-bottom: 4rem;
+        width: 100%;
+
+        @include desktop {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            padding-left: 6rem;
+
+        }
+
         &__heading {
             @include font($roboto, 1.5rem, 700, $black);
+
+            @include desktop {
+                padding-left: 6.5rem;
+            }
+
             padding: $heading-margin;
             margin-bottom: 1.62rem;
-           
+
         }
 
         &__cards {
@@ -124,7 +152,7 @@
 
             &__image {
                 height: 70%;
-                width: 100%;
+                width: 21rem;
                 object-fit: cover;
                 border-radius: 15px 15px 0 0;
             }
@@ -136,7 +164,7 @@
                 align-items: center;
                 justify-content: space-between;
 
-                
+
 
             }
 
@@ -151,4 +179,7 @@
     }
 }
 
-
+.scroll {
+    width: 100%;
+    overflow-y: scroll;
+}

@@ -263,6 +263,10 @@ input {
     opacity: 1;
   }
 }
+.tile__title {
+  transition: all 300ms ease;
+}
+
 .menu__container__tile {
   display: flex;
   justify-content: space-between;
@@ -410,12 +414,24 @@ input {
   color: black;
   padding: 3.1rem 0 0 1.25rem;
 }
+@media screen and (min-width: 1025px) {
+  .fonctionnement__heading {
+    padding-left: 6.5rem;
+  }
+}
 .fonctionnement__container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 3.75em;
+}
+@media screen and (min-width: 1025px) {
+  .fonctionnement__container {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-left: 6.5rem;
+  }
 }
 .fonctionnement__container__button {
   display: flex;
@@ -466,13 +482,22 @@ input {
 
 .restaurants {
   background-color: #F7F7F7;
-  width: auto;
+  width: 100%;
+  overflow-y: auto;
 }
 .restaurants__container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 4rem;
+  width: 100%;
+}
+@media screen and (min-width: 1025px) {
+  .restaurants__container {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-left: 6rem;
+  }
 }
 .restaurants__container__heading {
   font-family: "Roboto", sans-serif;
@@ -481,6 +506,11 @@ input {
   color: black;
   padding: 3.1rem 0 0 1.25rem;
   margin-bottom: 1.62rem;
+}
+@media screen and (min-width: 1025px) {
+  .restaurants__container__heading {
+    padding-left: 6.5rem;
+  }
 }
 .restaurants__container__cards {
   height: 15.6rem;
@@ -493,7 +523,7 @@ input {
 }
 .restaurants__container__cards__image {
   height: 70%;
-  width: 100%;
+  width: 21rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 15px 0 0;
@@ -514,6 +544,11 @@ input {
   font-weight: 300;
   color: black;
   margin: 0.3rem 0 0 0.62rem;
+}
+
+.scroll {
+  width: 100%;
+  overflow-y: scroll;
 }
 
 .photo {
