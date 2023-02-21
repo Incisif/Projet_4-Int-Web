@@ -9,6 +9,7 @@
         @include font($roboto, 24px, 700, $black);
         text-align: center;
         margin: 2.4rem 3.1rem 0 3.1rem;
+        
     }
 
     &__text {
@@ -30,6 +31,7 @@
     &__heading {
         @include font($roboto, 1.5rem, 700, $black);
         padding: $heading-margin;
+        
     }
 
     &__container {
