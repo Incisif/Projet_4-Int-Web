@@ -9,6 +9,7 @@
         @include font($roboto, 24px, 700, $black);
         text-align: center;
         margin: 2.4rem 3.1rem 0 3.1rem;
+        line-height: 1.75rem;
 
     }
 
@@ -16,6 +17,7 @@
         @include font($roboto, 18px, 300, $black);
         text-align: center;
         margin: 1rem 2rem 0 2rem;
+        line-height: 1.3rem;
     }
 
     &__button {
@@ -180,6 +182,12 @@
 }
 
 .scroll {
-    width: 100%;
-    overflow-y: scroll;
+    @include desktop{width: 100%;
+        overflow-y: auto;
+        overflow-y: hidden;
+    }
+    &::-webkit-scrollbar {
+        display: none; /* pour masquer la barre de défilement verticale */
+      }
+    
 }

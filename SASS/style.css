@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -392,6 +393,7 @@ button {
   color: black;
   text-align: center;
   margin: 2.4rem 3.1rem 0 3.1rem;
+  line-height: 1.75rem;
 }
 .explore__text {
   font-family: "Roboto", sans-serif;
@@ -400,6 +402,7 @@ button {
   color: black;
   text-align: center;
   margin: 1rem 2rem 0 2rem;
+  line-height: 1.3rem;
 }
 .explore__button {
   margin: 1.68rem 0 3.56rem 0;
@@ -544,9 +547,15 @@ button {
   margin: 0.3rem 0 0 0.62rem;
 }
 
-.scroll {
-  width: 100%;
-  overflow-y: scroll;
+@media screen and (min-width: 1025px) {
+  .scroll {
+    width: 100%;
+    overflow-y: auto;
+    overflow-y: hidden;
+  }
+}
+.scroll::-webkit-scrollbar {
+  display: none; /* pour masquer la barre de défilement verticale */
 }
 
 .photo {
