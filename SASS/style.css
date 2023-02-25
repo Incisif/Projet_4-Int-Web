@@ -50,11 +50,6 @@ q:before, q:after {
   content: none;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 input {
   border-radius: 0;
 }
@@ -64,6 +59,19 @@ input {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 .header {
@@ -158,6 +166,7 @@ input {
   border: none;
   margin-left: 1rem;
   background-color: transparent;
+  width: 110px;
 }
 .location__form__input:focus {
   outline: none;
@@ -311,18 +320,6 @@ input {
 .menu__container__tile:nth-of-type(10) {
   animation: tiles-animation 400ms ease-in-out 585ms forwards;
 }
-.menu__container__tile:nth-of-type(11) {
-  animation: tiles-animation 400ms ease-in-out 650ms forwards;
-}
-.menu__container__tile:nth-of-type(12) {
-  animation: tiles-animation 400ms ease-in-out 715ms forwards;
-}
-.menu__container__tile:nth-of-type(13) {
-  animation: tiles-animation 400ms ease-in-out 780ms forwards;
-}
-.menu__container__tile:nth-of-type(14) {
-  animation: tiles-animation 400ms ease-in-out 845ms forwards;
-}
 .menu__container__tile__heading {
   font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
@@ -355,7 +352,7 @@ input {
   transform: translateX(0);
 }
 .menu__container__tile:hover .tile__title {
-  width: 60%;
+  width: calc(100% - 110px);
 }
 
 .check {
@@ -378,6 +375,7 @@ input {
   display: flex;
   transform: translateX(3.75rem);
   transition: transform 350ms ease;
+  height: 100%;
 }
 
 .explore {

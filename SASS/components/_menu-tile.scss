@@ -29,8 +29,9 @@ $delay: 65ms;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     transform: translateY(-4.25rem);
     opacity: 0;
+    
 
-    @for $i from 1 through 14 {
+    @for $i from 1 through 10 {
         &:nth-of-type(#{$i}) {
             animation: tiles-animation 400ms ease-in-out ($i - 1) * $delay forwards;
         }
@@ -67,7 +68,8 @@ $delay: 65ms;
     }
 
     &:hover .tile__title {
-        width: 60%;
+        // width: 60%;
+        width: calc(100% - 110px);
     }
 
 }
@@ -95,5 +97,6 @@ $delay: 65ms;
     display: flex;
     transform: translateX(3.75rem);
     transition: transform 350ms ease;
+    height: 100%;
 
 }

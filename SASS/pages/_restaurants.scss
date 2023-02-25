@@ -37,6 +37,7 @@
     &__title {
         @include font($roboto, 1rem, 300, $black);
         margin-top: $menu-title-margin;
+        
 
     }
 
