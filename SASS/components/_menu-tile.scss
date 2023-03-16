@@ -29,7 +29,7 @@ $delay: 65ms;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     transform: translateY(-4.25rem);
     opacity: 0;
-    
+
 
     @for $i from 1 through 10 {
         &:nth-of-type(#{$i}) {
