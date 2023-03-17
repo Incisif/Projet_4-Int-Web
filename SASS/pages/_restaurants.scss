@@ -1,3 +1,5 @@
+
+
 .photo {
     width: 100%;
     height: 300px;
@@ -18,12 +20,12 @@
     max-width: 1055px;
     top: -50px;
     position: relative;
-    
+
 
     &__container {
         width: 95%;
         max-width: 634px;
-       
+
 
     }
 
@@ -32,12 +34,16 @@
         @include font($shrikhand, 1.75rem, 400, $black);
         margin-top: 2rem;
 
+        @include desktop {
+            justify-content: center;
+        }
+
     }
 
     &__title {
         @include font($roboto, 1rem, 300, $black);
         margin-top: $menu-title-margin;
-        
+
 
     }
 

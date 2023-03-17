@@ -31,7 +31,7 @@ $delay: 65ms;
     opacity: 0;
 
 
-    @for $i from 1 through 10 {
+    @for $i from 1 through 14 {
         &:nth-of-type(#{$i}) {
             animation: tiles-animation 400ms ease-in-out ($i - 1) * $delay forwards;
         }

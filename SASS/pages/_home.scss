@@ -28,7 +28,8 @@
 
 //FUNCTIONING
 .fonctionnement {
-
+    width: 100%;
+    display: flex;
 
     &__heading {
         @include font($roboto, 1.5rem, 700, $black);
@@ -182,12 +183,14 @@
 }
 
 .scroll {
-    @include desktop{width: 100%;
+    @include desktop {
+        width: 100%;
         overflow-y: auto;
         overflow-y: hidden;
     }
+
     &::-webkit-scrollbar {
-        display: none; 
-      }
-    
+        display: none;
+    }
+
 }

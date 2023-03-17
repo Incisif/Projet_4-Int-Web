@@ -320,6 +320,18 @@ button {
 .menu__container__tile:nth-of-type(10) {
   animation: tiles-animation 400ms ease-in-out 585ms forwards;
 }
+.menu__container__tile:nth-of-type(11) {
+  animation: tiles-animation 400ms ease-in-out 650ms forwards;
+}
+.menu__container__tile:nth-of-type(12) {
+  animation: tiles-animation 400ms ease-in-out 715ms forwards;
+}
+.menu__container__tile:nth-of-type(13) {
+  animation: tiles-animation 400ms ease-in-out 780ms forwards;
+}
+.menu__container__tile:nth-of-type(14) {
+  animation: tiles-animation 400ms ease-in-out 845ms forwards;
+}
 .menu__container__tile__heading {
   font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
@@ -407,6 +419,10 @@ button {
   margin: 1.68rem 0 3.56rem 0;
 }
 
+.fonctionnement {
+  width: 100%;
+  display: flex;
+}
 .fonctionnement__heading {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
@@ -591,6 +607,11 @@ button {
   font-weight: 400;
   color: black;
   margin-top: 2rem;
+}
+@media screen and (min-width: 1025px) {
+  .menu__heading {
+    justify-content: center;
+  }
 }
 .menu__title {
   font-family: "Roboto", sans-serif;
